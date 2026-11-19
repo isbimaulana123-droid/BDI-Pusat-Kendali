@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BDI Pusat Kendali</title>
+  <meta name="description" content="Pusat kendali pelatihan BDI: tenggat KAK ke Kemenkes (publikasi H-30), RAB dan target margin, kalender batch 2027.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Langsung ke isi</a>
+
+  <aside class="sidebar" id="sidebar" aria-label="Navigasi utama">
+    <div class="brand">
+      <p class="brand-name">BDI Pusat Kendali</p>
+      <p class="brand-sub">Learning BDI, BMHS Diklat Indonesia</p>
+    </div>
+    <nav>
+      <ul class="nav" id="nav-list"></ul>
+    </nav>
+    <p class="sidebar-foot">Data tersimpan di browser ini. Unduh cadangan di Pengaturan.</p>
+  </aside>
+  <div class="nav-scrim" id="nav-scrim" aria-hidden="true"></div>
+
+  <div class="shell">
+    <header class="topbar">
+      <button type="button" class="menu-btn" id="menu-btn" aria-controls="sidebar" aria-expanded="false"><span class="menu-lines" aria-hidden="true"></span>Menu</button>
+      <h1 class="page-title" id="page-title">BDI Pusat Kendali</h1>
+      <div class="acuan">
+        <label for="acuan">Tanggal acuan</label>
+        <input type="date" id="acuan">
+        <button type="button" class="link-btn" id="acuan-reset" hidden>Kembali ke hari ini</button>
+      </div>
+    </header>
+    <div class="global-note" id="global-note" hidden></div>
+    <main id="main" class="main" tabindex="-1">
+      <noscript><p class="notice">Aplikasi ini membutuhkan JavaScript. Aktifkan JavaScript di browser lalu muat ulang halaman.</p></noscript>
+    </main>
+  </div>
+
+  <dialog id="dlg" class="dlg"><form method="dialog" novalidate></form></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/domain.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/pages/hari-ini.js"></script>
+  <script src="js/pages/kak.js"></script>
+  <script src="js/pages/batch.js"></script>
+  <script src="js/pages/batch-detail.js"></script>
+  <script src="js/pages/kalender.js"></script>
+  <script src="js/pages/rab.js"></script>
+  <script src="js/pages/pengaturan.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
